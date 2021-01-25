@@ -8,7 +8,7 @@ const dev = process.env.REACT_APP_ENV === 'development';
 
 // If you want to change the language, remember to also change the
 // locale data and the messages in the app.js file.
-const locale = 'en';
+const locale = 'de';
 const i18n = {
   /*
     0: Sunday
@@ -54,7 +54,7 @@ const enableAvailability = process.env.REACT_APP_AVAILABILITY_ENABLED === 'true'
 // This is limited due to Stripe holding funds up to 90 days from the
 // moment they are charged. Also note that available time slots can only
 // be fetched for 180 days in the future.
-const dayCountAvailableForBooking = 90;
+const dayCountAvailableForBooking = 10;
 
 // To pass environment variables to the client app in the build
 // script, react-scripts (and the sharetribe-scripts fork of
@@ -81,25 +81,25 @@ const sentryDsn = process.env.REACT_APP_SENTRY_DSN;
 const usingSSL = process.env.REACT_APP_SHARETRIBE_USING_SSL === 'true';
 
 // Address information is used in SEO schema for Organization (http://schema.org/PostalAddress)
-const addressCountry = 'FI';
-const addressRegion = 'Helsinki';
-const postalCode = '00100';
-const streetAddress = 'Bulevardi 14';
+const addressCountry = 'DE';
+const addressRegion = 'Lingen (EMS)';
+const postalCode = '49809';
+const streetAddress = 'Kaiserstraße 10C';
 
 // Canonical root url is needed in social media sharing and SEO optimization purposes.
 const canonicalRootURL = process.env.REACT_APP_CANONICAL_ROOT_URL;
 
 // Site title is needed in meta tags (bots and social media sharing reads those)
-const siteTitle = 'Saunatime';
+const siteTitle = 'Let´s Bake';
 
 // Twitter handle is needed in meta tags (twitter:site). Start it with '@' character
-const siteTwitterHandle = '@sharetribe';
+const siteTwitterHandle = '@letsbake';
 
 // Instagram page is used in SEO schema (http://schema.org/Organization)
-const siteInstagramPage = null;
+const siteInstagramPage = 'https://www.instagram.com/letsbake/';
 
 // Facebook page is used in SEO schema (http://schema.org/Organization)
-const siteFacebookPage = 'https://www.facebook.com/Sharetribe/';
+const siteFacebookPage = 'https://www.facebook.com/letsbake/';
 
 // Social logins & SSO
 
@@ -165,19 +165,20 @@ const maps = {
   // Custom marker image to use in the Map component.
   //
   // NOTE: Not used if fuzzy locations are enabled.
+
   customMarker: {
-    enabled: false,
+    enabled: true,
 
     // Publicly accessible URL for the custom marker image.
     //
     // The easiest place is /public/static/icons/ folder, but then the
     // marker image is not available while developing through
     // localhost.
-    url: encodeURI(`${canonicalRootURL}/static/icons/map-marker-32x32.png`),
+    url: encodeURI(`${canonicalRootURL}/static/icons/map-marker-16x16.png`),
 
     // Dimensions of the marker image.
-    width: 32,
-    height: 32,
+    width: 16,
+    height: 16,
 
     // Position to anchor the image in relation to the coordinates,
     // ignored when using Mapbox.

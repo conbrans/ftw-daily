@@ -16,7 +16,7 @@
 :root {
   /* ================ Colors ================ */
 
-  --marketplaceColor: #c0392b;
+  --marketplaceColor: black;
   --marketplaceColorLight: #ff4c38;
   --marketplaceColorDark: #8c291e;
 
@@ -38,7 +38,7 @@
   --matterColorAnti: #b2b2b2;
   --matterColorNegative: #e7e7e7;
   --matterColorBright: #fcfcfc;
-  --matterColorLight: #ffffff;
+  --matterColorLight: #91b4b9;
 
   --matterColorLightTransparent: rgba(255, 255, 255, 0.65);
 
