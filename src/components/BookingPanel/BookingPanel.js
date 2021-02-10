@@ -85,14 +85,9 @@ const BookingPanel = props => {
     ? intl.formatMessage({ id: 'BookingPanel.subTitleClosedListing' })
     : null;
 
-  const isNightly = unitType === LINE_ITEM_NIGHT;
-  const isDaily = unitType === LINE_ITEM_DAY;
 
-  const unitTranslationKey = isNightly
-    ? 'BookingPanel.perNight'
-    : isDaily
-    ? 'BookingPanel.perDay'
-    : 'BookingPanel.perUnit';
+
+
 
   const classes = classNames(rootClassName || css.root, className);
   const titleClasses = classNames(titleClassName || css.bookingTitle);
@@ -143,7 +138,7 @@ const BookingPanel = props => {
             {formattedPrice}
           </div>
           <div className={css.perUnit}>
-            <FormattedMessage id={unitTranslationKey} />
+            <FormattedMessage id="BookingPanel.perUnit" />
           </div>
         </div>
 

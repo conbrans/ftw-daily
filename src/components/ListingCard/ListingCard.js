@@ -56,14 +56,8 @@ export const ListingCardComponent = props => {
   const { formattedPrice, priceTitle } = priceData(price, intl);
 
   const unitType = config.bookingUnitType;
-  const isNightly = unitType === LINE_ITEM_NIGHT;
-  const isDaily = unitType === LINE_ITEM_DAY;
 
-  const unitTranslationKey = isNightly
-    ? 'ListingCard.perNight'
-    : isDaily
-    ? 'ListingCard.perDay'
-    : 'ListingCard.perUnit';
+
 
   return (
     <NamedLink className={classes} name="ListingPage" params={{ id, slug }}>
@@ -88,7 +82,7 @@ export const ListingCardComponent = props => {
             {formattedPrice}
           </div>
           <div className={css.perUnit}>
-            <FormattedMessage id={unitTranslationKey} />
+            <FormattedMessage id="ListingCard.perUnit" />
           </div>
         </div>
         <div className={css.mainInfo}>

@@ -35,18 +35,8 @@
 
 export const filters = [
   {
-    id: 'dates',
-    label: 'Dates',
-    type: 'BookingDateRangeFilter',
-    group: 'primary',
-    // Note: BookingDateRangeFilter is fixed filter,
-    // you can't change "queryParamNames: ['dates'],"
-    queryParamNames: ['dates'],
-    config: {},
-  },
-  {
     id: 'price',
-    label: 'Price',
+    label: 'Preis',
     type: 'PriceFilter',
     group: 'primary',
     // Note: PriceFilter is fixed filter,
@@ -56,28 +46,15 @@ export const filters = [
     // Note: unlike most prices this is not handled in subunits
     config: {
       min: 0,
-      max: 1000,
-      step: 5,
+      max: 100,
+      step: 1,
     },
   },
   {
-    id: 'keyword',
-    label: 'Keyword',
-    type: 'KeywordFilter',
-    group: 'primary',
-    // Note: KeywordFilter is fixed filter,
-    // you can't change "queryParamNames: ['keywords'],"
-    queryParamNames: ['keywords'],
-    // NOTE: If you are ordering search results by distance
-    // the keyword search can't be used at the same time.
-    // You can turn on/off ordering by distance from config.js file.
-    config: {},
-  },
-  {
     id: 'category',
-    label: 'Category',
+    label: 'Kategorie',
     type: 'SelectSingleFilter',
-    group: 'secondary',
+    group: 'primary',
     queryParamNames: ['pub_category'],
     config: {
       // "key" is the option you see in Flex Console.
@@ -85,23 +62,23 @@ export const filters = [
       // Note: label is not added through the translation files
       // to make filter customizations a bit easier.
       options: [
-        { key: 'smoke', label: 'Smoke' },
-        { key: 'electric', label: 'Electric' },
-        { key: 'wood', label: 'Wood' },
-        { key: 'other', label: 'Other' },
+        { key: 'kuchen', label: 'Kuchen' },
+        { key: 'torte', label: 'Torte' },
+        { key: 'kekse', label: 'Kekse' },
+        { key: 'Muffin', label: 'Muffin' },
       ],
     },
   },
   {
     id: 'amenities',
-    label: 'Amenities',
+    label: 'Merkmale',
     type: 'SelectMultipleFilter',
-    group: 'secondary',
+    group: 'primary',
     queryParamNames: ['pub_amenities'],
     config: {
       // Optional modes: 'has_all', 'has_any'
       // https://www.sharetribe.com/api-reference/marketplace.html#extended-data-filtering
-      searchMode: 'has_all',
+      searchMode: 'has_any',
 
       // "key" is the option you see in Flex Console.
       // "label" is set here for this web app's UI only.
@@ -109,37 +86,14 @@ export const filters = [
       // to make filter customizations a bit easier.
       options: [
         {
-          key: 'towels',
-          label: 'Towels',
+          key: 'vegan',
+          label: 'Vegan',
         },
         {
-          key: 'bathroom',
-          label: 'Bathroom',
+          key: 'lactose free',
+          label: 'Laktose frei',
         },
-        {
-          key: 'swimming_pool',
-          label: 'Swimming pool',
-        },
-        {
-          key: 'own_drinks',
-          label: 'Own drinks allowed',
-        },
-        {
-          key: 'jacuzzi',
-          label: 'Jacuzzi',
-        },
-        {
-          key: 'audiovisual_entertainment',
-          label: 'Audiovisual entertainment',
-        },
-        {
-          key: 'barbeque',
-          label: 'Barbeque',
-        },
-        {
-          key: 'own_food_allowed',
-          label: 'Own food allowed',
-        },
+
       ],
     },
   },
@@ -161,10 +115,10 @@ export const sortConfig = {
   conflictingFilters: ['keyword'],
 
   options: [
-    { key: 'createdAt', label: 'Newest' },
-    { key: '-createdAt', label: 'Oldest' },
-    { key: '-price', label: 'Lowest price' },
-    { key: 'price', label: 'Highest price' },
+    { key: 'createdAt', label: 'Neueste' },
+    { key: '-createdAt', label: 'Älteste' },
+    { key: '-price', label: 'Geringster Preis' },
+    { key: 'price', label: 'Höchster Preis' },
 
     // The relevance is only used for keyword search, but the
     // parameter isn't sent to the Marketplace API. The key is purely
