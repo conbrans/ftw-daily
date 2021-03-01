@@ -62,10 +62,22 @@ export const filters = [
       // Note: label is not added through the translation files
       // to make filter customizations a bit easier.
       options: [
-        { key: 'kuchen', label: 'Kuchen' },
-        { key: 'torte', label: 'Torte' },
-        { key: 'kekse', label: 'Kekse' },
-        { key: 'Muffin', label: 'Muffin' },
+        {
+          key: 'kuchen',
+          label: 'Kuchen'
+        },
+        {
+          key: 'torte',
+          label: 'Torte'
+        },
+        {
+          key: 'kekse',
+          label: 'Kekse'
+        },
+        {
+          key: 'Muffin',
+          label: 'Muffin'
+        },
       ],
     },
   },
@@ -93,6 +105,19 @@ export const filters = [
           key: 'lactose free',
           label: 'Laktose frei',
         },
+        {
+          key: 'sweet',
+          label: 'Süß'
+        }, {
+          key: 'salty',
+          label: 'Salzig'
+        }, {
+          key: 'hearty',
+          label: 'Herzhaft'
+        }, {
+          key : 'vegetarian',
+          label: 'Vegetarisch'
+        }
 
       ],
     },
@@ -115,14 +140,30 @@ export const sortConfig = {
   conflictingFilters: ['keyword'],
 
   options: [
-    { key: 'createdAt', label: 'Neueste' },
-    { key: '-createdAt', label: 'Älteste' },
-    { key: '-price', label: 'Geringster Preis' },
-    { key: 'price', label: 'Höchster Preis' },
+    {
+      key: 'createdAt',
+      label: 'Neueste'
+    },
+    {
+      key: '-createdAt',
+      label: 'Älteste'
+    },
+    {
+      key: '-price',
+      label: 'Geringster Preis'
+    },
+    {
+      key: 'price',
+      label: 'Höchster Preis'
+    },
 
     // The relevance is only used for keyword search, but the
     // parameter isn't sent to the Marketplace API. The key is purely
     // for handling the internal state of the sorting dropdown.
-    { key: 'relevance', label: 'Relevance', longLabel: 'Relevance (Keyword search)' },
+    {
+      key: 'relevance',
+      label: 'Relevance',
+      longLabel: 'Relevance (Keyword search)'
+    },
   ],
 };

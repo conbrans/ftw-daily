@@ -36,7 +36,7 @@ const AboutPage = () => {
         </LayoutWrapperTopbar>
 
         <LayoutWrapperMain className={css.staticPageWrapper}>
-          <h1 className={css.pageTitle}>Die neue Art Backwaren zu kaufen.</h1>
+          <h1 className={css.pageTitle}><FormattedMessage id="AboutPage.title" /></h1>
           <img className={css.coverImage} src={image} alt="Let's Bale" />
 
 
@@ -57,9 +57,9 @@ const AboutPage = () => {
               </p>
 
               <p>
-               PS:  Du kannst uns auch auf {' '}
-                <ExternalLink href={siteFacebookPage}>Facebook</ExternalLink> und{' '}
-                <ExternalLink href={siteTwitterPage}>Twitter</ExternalLink> finden.
+                <FormattedMessage id="AboutPage.findUs"/>{' '}
+                <ExternalLink href={siteFacebookPage}>Facebook</ExternalLink>  <FormattedMessage id="AboutPage.findUsPartTwo"/>{' '}
+                <ExternalLink href={siteTwitterPage}>Twitter</ExternalLink> <FormattedMessage id="AboutPage.findUsPartThree"/>.
               </p>
             </div>
           </div>

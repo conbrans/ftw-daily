@@ -145,7 +145,7 @@
 .clearButton {
   @apply --marketplaceH4FontStyles;
   font-weight: var(--fontWeightMedium);
-  color: var(--matterColorAnti);
+  color: black;
 
   /* Layout */
   margin: 0 auto 0 0;
@@ -166,7 +166,7 @@
 .cancelButton {
   @apply --marketplaceH4FontStyles;
   font-weight: var(--fontWeightMedium);
-  color: var(--matterColorAnti);
+  color: black;
 
   /* Layout */
   margin: 0;

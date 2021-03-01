@@ -13,6 +13,9 @@ import { Form, IconSpinner, PrimaryButton, FieldDateRangeInput } from '../../com
 import EstimatedBreakdownMaybe from './EstimatedBreakdownMaybe';
 
 import css from './BookingDatesForm.module.css';
+import {changeLocationFilter} from '../../ducks/LocationFilter.duck';
+import {formatMoney} from '../../util/currency';
+import {Money} from 'sharetribe-flex-sdk/src/types';
 
 const identity = v => v;
 
@@ -106,9 +109,9 @@ export class BookingDatesFormComponent extends Component {
             submitButtonWrapperClassName,
             unitType,
             values,
+            lineItems,
             timeSlots,
             fetchTimeSlotsError,
-            lineItems,
             fetchLineItemsInProgress,
             fetchLineItemsError,
           } = fieldRenderProps;
@@ -149,10 +152,15 @@ export class BookingDatesFormComponent extends Component {
                 }
               : null;
 
-          const showEstimatedBreakdown =
-            bookingData && lineItems && !fetchLineItemsInProgress && !fetchLineItemsError;
 
-          const bookingInfoMaybe = showEstimatedBreakdown ? (
+
+
+
+          const showEstimatedBreakdown = bookingData && lineItems && !fetchLineItemsInProgress && !fetchLineItemsError;
+
+
+
+          const bookingInfoMaybe =  showEstimatedBreakdown ? (
             <div className={css.priceBreakdownContainer}>
               <h3 className={css.priceBreakdownTitle}>
                 <FormattedMessage id="BookingDatesForm.priceBreakdownTitle" />
@@ -161,7 +169,7 @@ export class BookingDatesFormComponent extends Component {
             </div>
           ) : null;
 
-          const loadingSpinnerMaybe = fetchLineItemsInProgress ? (
+         const loadingSpinnerMaybe = fetchLineItemsInProgress ? (
             <IconSpinner className={css.spinner} />
           ) : null;
 
@@ -190,6 +198,7 @@ export class BookingDatesFormComponent extends Component {
           const submitButtonClasses = classNames(
             submitButtonWrapperClassName || css.submitButtonWrapper
           );
+
 
           return (
             <Form onSubmit={handleSubmit} className={classes}>

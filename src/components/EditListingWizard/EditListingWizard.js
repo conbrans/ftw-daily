@@ -28,8 +28,7 @@ import EditListingWizardTab, {
 } from './EditListingWizardTab';
 import css from './EditListingWizard.module.css';
 
-// Show availability calendar only if environment variable availabilityEnabled is true
-const availabilityMaybe = config.enableAvailability ? [AVAILABILITY] : [];
+
 
 // You can reorder these panels.
 // Note 1: You need to change save button translations for new listing flow
@@ -40,7 +39,7 @@ export const TABS = [
   FEATURES,
   LOCATION,
   PRICING,
-  ...availabilityMaybe,
+
   PHOTOS,
 ];
 
@@ -60,9 +59,7 @@ const tabLabel = (intl, tab) => {
     key = 'EditListingWizard.tabLabelLocation';
   } else if (tab === PRICING) {
     key = 'EditListingWizard.tabLabelPricing';
-  } else if (tab === AVAILABILITY) {
-    key = 'EditListingWizard.tabLabelAvailability';
-  } else if (tab === PHOTOS) {
+  }else if (tab === PHOTOS) {
     key = 'EditListingWizard.tabLabelPhotos';
   }
 
@@ -79,7 +76,6 @@ const tabLabel = (intl, tab) => {
  */
 const tabCompleted = (tab, listing) => {
   const {
-    availabilityPlan,
     description,
     geolocation,
     price,
@@ -97,8 +93,6 @@ const tabCompleted = (tab, listing) => {
       return !!(geolocation && publicData && publicData.location && publicData.location.address);
     case PRICING:
       return !!price;
-    case AVAILABILITY:
-      return !!availabilityPlan;
     case PHOTOS:
       return images && images.length > 0;
     default:

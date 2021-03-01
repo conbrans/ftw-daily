@@ -203,6 +203,7 @@ export class ListingPageComponent extends Component {
       fetchLineItemsError,
     } = this.props;
 
+
     const listingId = new UUID(rawParams.id);
     const isPendingApprovalVariant = rawParams.variant === LISTING_PAGE_PENDING_APPROVAL_VARIANT;
     const isDraftVariant = rawParams.variant === LISTING_PAGE_DRAFT_VARIANT;

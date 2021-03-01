@@ -8,7 +8,7 @@ import { Form, LocationAutocompleteInput } from '../../components';
 import css from './TopbarSearchForm.module.css';
 
 const identity = v => v;
-
+//TODO anpassen für Mobile
 class TopbarSearchFormComponent extends Component {
   constructor(props) {
     super(props);
