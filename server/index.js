@@ -46,7 +46,7 @@ const buildPath = path.resolve(__dirname, '..', 'build');
 const env = process.env.REACT_APP_ENV;
 const dev = process.env.REACT_APP_ENV === 'development';
 const PORT = parseInt(process.env.PORT, 10);
-const CLIENT_ID ='6680223e-b475-44a4-bd74-ed3fca76394b';
+const CLIENT_ID =process.env.REACT_APP_SHARETRIBE_SDK_CLIENT_ID;
 const BASE_URL = process.env.REACT_APP_SHARETRIBE_SDK_BASE_URL;
 const TRANSIT_VERBOSE = process.env.REACT_APP_SHARETRIBE_SDK_TRANSIT_VERBOSE === 'true';
 const USING_SSL = process.env.REACT_APP_SHARETRIBE_USING_SSL === 'true';
