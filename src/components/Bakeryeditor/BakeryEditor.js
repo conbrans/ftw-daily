@@ -7,7 +7,7 @@ import { BakeryEditForm } from '../../forms';
 const Edit = props =>{
   const {message, intl} = props;
 
-  return()
+  return (<BakeryEditForm/>);
 
 
 
