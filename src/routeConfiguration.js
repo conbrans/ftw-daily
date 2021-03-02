@@ -2,6 +2,7 @@ import React from 'react';
 import {
   AboutPage,
   AuthenticationPage,
+  BakeryEditorPage,
   CheckoutPage,
   ContactDetailsPage,
   EditListingPage,
@@ -328,6 +329,12 @@ const routeConfiguration = () => {
       path: '/notfound',
       name: 'NotFoundPage',
       component: props => <NotFoundPage {...props} />,
+    },
+
+    {
+      path: '/bakeryeditor',
+      name: 'BakeryEditor',
+      component : props => <BakeryEditorPage {...props} />,
     },
 
     // Do not change this path!

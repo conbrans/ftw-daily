@@ -37,7 +37,7 @@ const AboutPage = () => {
 
         <LayoutWrapperMain className={css.staticPageWrapper}>
           <h1 className={css.pageTitle}><FormattedMessage id="AboutPage.title" /></h1>
-          <img className={css.coverImage} src={image} alt="Let's Bale" />
+          <img className={css.coverImage} src={image} alt="Let's Bake" />
 
 
           <div className={css.contentWrapper}>
