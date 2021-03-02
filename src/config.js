@@ -68,7 +68,7 @@ const currency = process.env.REACT_APP_SHARETRIBE_MARKETPLACE_CURRENCY;
 
 // Currency formatting options.
 // See: https://github.com/yahoo/react-intl/wiki/API#formatnumber
-const currencyConfig = currencyConfiguration(currency);
+const currencyConfig = currencyConfiguration('EUR');
 
 // Listing minimum price in currency sub units, e.g. cents.
 // 0 means no restriction to the price
