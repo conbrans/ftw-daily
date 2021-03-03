@@ -20,6 +20,8 @@ const AboutPage = () => {
   const siteTwitterPage = twitterPageURL(siteTwitterHandle);
 
   // prettier-ignore
+
+  //TODO INSTAGRAM HINZUFÜGEN
   return (
     <StaticPage
       title="Über uns | Let's Bake"
@@ -49,7 +51,7 @@ const AboutPage = () => {
 
               <h2><FormattedMessage id="AboutPage.contentMainCaption" /></h2>
 
-              <p><FormattedMessage id="AboutPage.contentMainText" /><b>DANKE</b> &#x2764;</p>
+              <p><FormattedMessage id="AboutPage.contentMainText" /> <b>DANKE</b> &#x2764;</p>
 
               <h3 className={css.subtitle}><FormattedMessage id="AboutPage.contentTeamCaption" /></h3>
 
@@ -59,7 +61,8 @@ const AboutPage = () => {
               <p>
                 <FormattedMessage id="AboutPage.findUs"/>{' '}
                 <ExternalLink href={siteFacebookPage}>Facebook</ExternalLink>  <FormattedMessage id="AboutPage.findUsPartTwo"/>{' '}
-                <ExternalLink href={siteTwitterPage}>Twitter</ExternalLink> <FormattedMessage id="AboutPage.findUsPartThree"/>.
+                <ExternalLink href={siteTwitterPage}>Twitter</ExternalLink> und
+
               </p>
             </div>
           </div>

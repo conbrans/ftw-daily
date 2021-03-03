@@ -43,6 +43,7 @@
   @apply --marketplaceModalCloseIcon;
   margin-left: 0;
   margin-right: 5px;
+
 }
 
 .iconCheckmark {
@@ -189,7 +190,7 @@
 
 .savedPaymentMethodDelete {
   @apply --marketplaceH4FontStyles;
-  color: var(--matterColorAnti);
+  color: black;
   cursor: pointer;
   margin-top: 14px;
   margin-bottom: 10px;

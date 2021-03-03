@@ -155,15 +155,6 @@ export const sortConfig = {
     {
       key: 'price',
       label: 'Höchster Preis'
-    },
-
-    // The relevance is only used for keyword search, but the
-    // parameter isn't sent to the Marketplace API. The key is purely
-    // for handling the internal state of the sorting dropdown.
-    {
-      key: 'relevance',
-      label: 'Relevance',
-      longLabel: 'Relevance (Keyword search)'
-    },
+    }
   ],
 };

@@ -263,7 +263,7 @@
 .terms {
   /* Font */
   @apply --marketplaceTinyFontStyles;
-  color: var(--matterColorAnti);
+  color: black;
   transition: var(--transitionStyleButton);
 
   margin-top: 0;

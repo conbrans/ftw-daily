@@ -140,7 +140,7 @@
 }
 
 .mobileHelp {
-  color: var(--matterColorAnti);
+  color: black;
   margin: 0 24px;
 
   /* Absolute position to avoid affecting the layout of the autocomplete

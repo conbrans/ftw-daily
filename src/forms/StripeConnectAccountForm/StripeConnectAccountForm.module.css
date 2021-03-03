@@ -54,6 +54,7 @@
   @apply --marketplaceModalHelperText;
   margin-bottom: 12px;
   text-align: center;
+color: black;
 
   @media (--viewportMedium) {
     margin-bottom: 16px;

@@ -8,7 +8,7 @@ const dev = process.env.REACT_APP_ENV === 'development';
 
 // If you want to change the language, remember to also change the
 // locale data and the messages in the app.js file.
-const locale = 'en';
+const locale = 'de';
 const i18n = {
   /*
     0: Sunday
@@ -100,6 +100,8 @@ const siteInstagramPage = 'https://www.instagram.com/letsbake/';
 
 // Facebook page is used in SEO schema (http://schema.org/Organization)
 const siteFacebookPage = 'https://www.facebook.com/letsbake/';
+
+
 
 // Social logins & SSO
 
