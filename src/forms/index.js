@@ -1,3 +1,4 @@
+export { default as BakeryEditForm} from './BakeryEditorForm/BakeryEditForm';
 export { default as BookingDatesForm } from './BookingDatesForm/BookingDatesForm';
 export { default as ContactDetailsForm } from './ContactDetailsForm/ContactDetailsForm';
 export { default as ConfirmSignupForm } from './ConfirmSignupForm/ConfirmSignupForm';

@@ -1052,5 +1052,44 @@
   "AboutPage.findUs" : "PS: You can find us on ",
   "AboutPage.findUsPartTwo" : "and",
   "AboutPage.findUsPartThree" : " ",
-  "AboutPage.title" : "The new way of buying bakery products."
+  "AboutPage.title" : "The new way of buying bakery products.",
+  "BakeryEditor.caption": "Pastry Editor",
+  "BakeryEditorForm.bakedGoodsInput": "Pastry*",
+  "BakeryEditorForm.bakedGoodsPlaceholder" : "What kind of pastry would you like?",
+  "BakeryEditorForm.bakedGoodsRequired" : "Du musst deinen Wunsch genauer beschreiben.",
+  "BakeryEditorForm.ingredientMessage": "You need to be more specific about your desire.",
+  "BakeryEditorForm.ingredientPlaceholder": "What should be in the pastry?",
+  "BakeryEditorForm.ingredientRequired": "One or more ingredients are needed.",
+  "BakeryEditorForm.button" : "Submit request",
+  "BakeryEditorForm.optionDisabled" : "Which pastry would you like?",
+  "BakeryEditorForm.chocolateTitle" : "Chocolate type",
+  "BakeryEditorForm.chocolateOptionDisabled" : "What kind of chocolate would you like? (Optional)",
+  "BakeryEditorForm.nutsTitle" : "Nuts",
+  "BakeryEditorForm.nutsOptionDisabled" : "What kind of nuts would you like? (Optional)",
+  "BakeryEditorForm.fruitsOptionDisabled" : "Which fruits should be included? (Optional)",
+  "BakeryEditorForm.fruits" : "Fruits",
+
+  "bakedgoods.cake" : "Cake",
+  "bakedgoods.flan" : "Flan",
+  "bakedgoods.cookie" : "Cookie",
+  "bakedgoods.muffin" : "Muffin",
+
+  "fruits.apple" : "Apple",
+  "fruits.peach" : "Peach",
+  "fruits.cherry" : "Cherry",
+  "fruits.strawberry" : "Strawberry",
+
+  "chocolate.bitter" : "Bitter Chocolate",
+  "chocolate.semi" : "Semi-dark Chocolate",
+  "chocolate.dark" : "Dark Chocolate",
+  "chocolate.milk" : "Milk Chocolate",
+  "chocolate.white" : "White Chocolate",
+
+  "nuts.hazel" : "Hazelnut",
+  "nuts.wal" : "Walnut",
+  "nuts.macadamia" : "Macadamia",
+  "nuts.almonds" : "Almonds",
+
+  "topping.yes" : "Add Topping",
+  "topping.no" : "No Topping"
 }
