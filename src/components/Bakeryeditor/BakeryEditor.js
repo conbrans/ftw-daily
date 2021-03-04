@@ -3,11 +3,8 @@ import React from 'react';
 
 import { BakeryEditForm } from '../../forms';
 import {func, string} from 'prop-types';
-import { Document, Page, Text, View, StyleSheet } from '@react-pdf/renderer';
-
 import css from '../EditListingDescriptionPanel/EditListingDescriptionPanel.module.css';
 import {FormattedMessage} from 'react-intl';
-import * as ReactPDF from 'react-dom';
 
 const styles = StyleSheet.create({
   page: {
