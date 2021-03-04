@@ -5,57 +5,67 @@ import classNames from 'classnames';
 import css from './TermsOfService.module.css';
 
 const TermsOfService = props => {
-  const { rootClassName, className } = props;
+  const {
+    rootClassName,
+    className
+  } = props;
   const classes = classNames(rootClassName || css.root, className);
 
   // prettier-ignore
   return (
     <div className={classes}>
-      <p className={css.lastUpdated}>Last updated: October 30, 2017</p>
+      <p className={css.lastUpdated}>Zuletzt aktualisiert : 01.03.2021</p>
 
+
+      <h2>1. Begrifflichkeiten</h2>
       <p>
-        Thank you for using Saunatime! Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Kunde/Käufer: eine Person (natürlich oder juristisch), die über die Plattform eine
+        Bestellung aufgibt.</p>
+      <p>
+        Anbieter/Verkäufer: eine Person (natürlich oder juristisch), die über die Plattform
+        Backwaren anbietet oder verkauft und die Plattform zum Abschluss von Verträgen und Bezahlung
+        nutzt.</p>
+      <p>Plattform: Die Website, die von der Let’s Bake GbR zur Verfügung gestellt wird,
+        einschließlich der einzelnen Kunden- und Anbieterprofile.</p>
+      <p>Anfrage: Eine unverbindliche Nachricht an einen Anbieter/Verkäufer, in dem die weiteren
+        Details zum Produkt gestellt werden können.
       </p>
 
-      <h2>1 Lorem ipsum dolor sit amet</h2>
+      <h2>2. Identität von Let’s Bake</h2>
+      <p>Die Let’s Bake GbR ist unter der Bezeichnung letsbake.de tätig.</p>
+      <p>Korrespondezanschrift:</p>
+      <p>Let’s Bake GbR</p>
+      <p>Kaiserstraße 10c</p>
+      <p>49809 Lingen</p>
+      <p>info@letsbake.de</p>
+      <p>Tel.: 0172 975 38 34</p>
+
+
+      <h2>3. Anwendbarkeit</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Die vorliegenden Allgemeinen Geschäftsbedingungen sind sowohl für Käufer als auch Verkäufer
+        der Plattform anwendbar.
+        Durch die Aufgabe einer Bestellung schließt der Kunde einen Vertrag mit dem Anbieter über
+        die Lieferung des vom Kunden ausgewählten Angebots.
       </p>
 
-      <h2>2 Sed ut perspiciatis unde</h2>
       <p>
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-        architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-        aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-        voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-        consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
-        dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
-        exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
-        consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
-        molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+        Die Let’s Bake GbR ist nicht für das Angebot und/oder den Vertrag zwischen dem Kunden und
+        dem Anbieter verantwortlich. Gegebenenfalls gelten die Allgemeinen Geschäftsbedingungen des
+        Anbieters zusätzlich für das Angebot und den Vertrag.
       </p>
 
-      <h2>3 At vero eos et accusamus</h2>
-      <p>
-        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-        voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
-        cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id
-        est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam
-        libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
-        maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
-        Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut
-        et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a
-        sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis
-        doloribus asperiores repellat
-      </p>
+      <h2> 4. Preise</h2>
+      <p>Alle Preise sind zuzüglich Versandkosten zu verstehen, eine
+        gegebenenfalls bestehende Umsatzsteuer ist inklusive.</p>
+      <h2> 5. Lieferung und Abholung</h2>
+      <p>Die Lieferung oder Abholung ist zwischen dem Käufer und Verkäufer zu vereinbaren. Let’s
+        Bake bietet dabei lediglich die Möglichkeit, einen Versanddienstleister zu beauftragen.</p>
+      <h2> 6. Schadenersatz</h2>
+      <p>Etwaige Schadenersatzansprüche sind gegen den Verkäufer, nicht aber die Let’s Bake GbR zu
+        stellen.</p>
+      <h2> 7. Gerichtsstand</h2>
+      <p>Gerichtsstand für beide Teile ist Osnabrück.</p>
     </div>
   );
 };
@@ -65,7 +75,7 @@ TermsOfService.defaultProps = {
   className: null,
 };
 
-const { string } = PropTypes;
+const {string} = PropTypes;
 
 TermsOfService.propTypes = {
   rootClassName: string,

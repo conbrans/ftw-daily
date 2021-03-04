@@ -13,10 +13,11 @@ import {
 
 import css from './AboutPage.module.css';
 import image from './bakery.jpg';
+import video from './imagevideo.mp4';
 import {FormattedMessage} from '../../util/reactIntl';
 
 const AboutPage = () => {
-  const { siteTwitterHandle, siteFacebookPage } = config;
+  const { siteTwitterHandle, siteFacebookPage, siteInstagramPage } = config;
   const siteTwitterPage = twitterPageURL(siteTwitterHandle);
 
   // prettier-ignore
@@ -39,8 +40,7 @@ const AboutPage = () => {
 
         <LayoutWrapperMain className={css.staticPageWrapper}>
           <h1 className={css.pageTitle}><FormattedMessage id="AboutPage.title" /></h1>
-          <img className={css.coverImage} src={image} alt="Let's Bake" />
-
+          <video src={video} autoPlay={false} controls poster={image}>Dieses Video kann in Ihrem Browser nicht wieder gegeben werden.</video>
 
           <div className={css.contentWrapper}>
             <div className={css.contentSide}>
@@ -60,8 +60,9 @@ const AboutPage = () => {
 
               <p>
                 <FormattedMessage id="AboutPage.findUs"/>{' '}
-                <ExternalLink href={siteFacebookPage}>Facebook</ExternalLink>  <FormattedMessage id="AboutPage.findUsPartTwo"/>{' '}
-                <ExternalLink href={siteTwitterPage}>Twitter</ExternalLink> und
+                <ExternalLink href={siteFacebookPage}>Facebook</ExternalLink>,{' '}
+                <ExternalLink href={siteTwitterPage}>Twitter</ExternalLink>  <FormattedMessage id="AboutPage.findUsPartTwo"/>{' '}
+                <ExternalLink href={siteInstagramPage}>Instagram</ExternalLink> finden.
 
               </p>
             </div>

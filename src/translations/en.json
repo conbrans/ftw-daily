@@ -1091,5 +1091,7 @@
   "nuts.almonds" : "Almonds",
 
   "topping.yes" : "Add Topping",
-  "topping.no" : "No Topping"
+  "topping.no" : "No Topping",
+
+  "Footer.toBakeryEditor":"Pastry Editor"
 }
