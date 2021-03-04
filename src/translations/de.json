@@ -630,8 +630,8 @@
   "ProfilePage.loadingDataFailed": "Hoppla! etwas ist schiefgelaufen. Bitte erneut versuchen.",
   "ProfilePage.loadingReviewsFailed": "Fehler beim Laden der Bewertungen.",
   "ProfilePage.mobileHeading": "{name}",
-  "ProfilePage.reviewsOfCustomerTitle": "Bewertungen von Gastgebern ({count})",
-  "ProfilePage.reviewsOfProviderTitle": "Bewertungen von Gästen ({count})",
+  "ProfilePage.reviewsOfCustomerTitle": "Bewertungen von Verkäufern ({count})",
+  "ProfilePage.reviewsOfProviderTitle": "Bewertungen von Kunden ({count})",
   "ProfilePage.schemaTitle": "{name} | {siteTitle}",
   "ProfileSettingsForm.addYourProfilePicture": "+ Dein Profilbild hinzufügen…",
   "ProfileSettingsForm.addYourProfilePictureMobile": "+ Hinzufügen",
@@ -959,7 +959,7 @@
   "TransactionPanel.orderEnquiredTitle": "Du hattest eine Anfrage über {listingLink}",
   "TransactionPanel.orderPaymentExpiredTitle": "Du hast die Zahlung nicht rechtzeitig bestätigt",
   "TransactionPanel.orderPaymentPendingTitle": "Du hast die Zahlung noch nicht bestätigt",
-  "TransactionPanel.orderPreauthorizedInfo": "{providerName} wurde über die Buchungsanfrage benachrichtig. Jetzt kannst du dich entspannt zurücklehnen.",
+  "TransactionPanel.orderPreauthorizedInfo": "{providerName} wurde über die Buchungsanfrage benachrichtigt. Jetzt kannst du dich entspannt zurücklehnen.",
   "TransactionPanel.orderPreauthorizedSubtitle": "Du hast angefragt, {listingLink} zu buchen.",
   "TransactionPanel.orderPreauthorizedTitle": "Ausgezeichnet, {customerName}!",
   "TransactionPanel.paymentMethodsPageLink": "Zahlungsmethodenseite",
@@ -1030,6 +1030,8 @@
   "topping.yes" : "Topping/Glasur hinzufügen",
   "topping.no" : "Kein Topping/Keine Glasur",
 
-  "AuthenticationPage.signupWithFacebook" : "Über Facebook anmelden"
+  "AuthenticationPage.signupWithFacebook" : "Über Facebook anmelden",
 
+  "LimitedAccessBanner.logout": "Logout",
+  "LimitedAccessBanner.message": "Du bist angemeldet als {firstName} {lastName}. Deine Aktionsmöglichkeiten sind begrenzt."
 }
