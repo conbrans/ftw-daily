@@ -1031,6 +1031,6 @@
   "BookingBreakdown.bookingStart": "Frühstes Lieferungsdatum",
   "BookingBreakdown.baseUnitDay": "{unitPrice} * {quantity, number} {quantity, plural, one {} other {days}}",
   "Footer.toBakeryEditor":"Backwaren-Editor",
-  "BookingBreakdown.baseUnitQuantity" : "Preis pro Einheit",
+  "BookingBreakdown.baseUnitQuantity" : "Preis pro Einheit"
 
 }
