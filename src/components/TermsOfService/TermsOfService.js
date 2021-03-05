@@ -19,14 +19,14 @@ const TermsOfService = props => {
 
       <h2>1. Begrifflichkeiten</h2>
       <p>
-        Kunde/Käufer: eine Person (natürlich oder juristisch), die über die Plattform eine
+        Nachfrage/Käufer: eine Person (natürlich oder juristisch), die über die Plattform eine
         Bestellung aufgibt.</p>
       <p>
         Anbieter/Verkäufer: eine Person (natürlich oder juristisch), die über die Plattform
         Backwaren anbietet oder verkauft und die Plattform zum Abschluss von Verträgen und Bezahlung
         nutzt.</p>
       <p>Plattform: Die Website, die von der Let’s Bake GbR zur Verfügung gestellt wird,
-        einschließlich der einzelnen Kunden- und Anbieterprofile.</p>
+        einschließlich der einzelnen Nachfrager- und Anbieterprofile.</p>
       <p>Anfrage: Eine unverbindliche Nachricht an einen Anbieter/Verkäufer, in dem die weiteren
         Details zum Produkt gestellt werden können.
       </p>
@@ -45,12 +45,12 @@ const TermsOfService = props => {
       <p>
         Die vorliegenden Allgemeinen Geschäftsbedingungen sind sowohl für Käufer als auch Verkäufer
         der Plattform anwendbar.
-        Durch die Aufgabe einer Bestellung schließt der Kunde einen Vertrag mit dem Anbieter über
-        die Lieferung des vom Kunden ausgewählten Angebots.
+        Durch die Aufgabe einer Bestellung schließt der Nachfrager einen Vertrag mit dem Anbieter über
+        die Lieferung des vom Nachfrager ausgewählten Angebots.
       </p>
 
       <p>
-        Die Let’s Bake GbR ist nicht für das Angebot und/oder den Vertrag zwischen dem Kunden und
+        Die Let’s Bake GbR ist nicht für das Angebot und/oder den Vertrag zwischen dem Nachfrager und
         dem Anbieter verantwortlich. Gegebenenfalls gelten die Allgemeinen Geschäftsbedingungen des
         Anbieters zusätzlich für das Angebot und den Vertrag.
       </p>

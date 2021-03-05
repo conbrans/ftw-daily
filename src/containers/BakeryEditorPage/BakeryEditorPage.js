@@ -1,6 +1,5 @@
 // containers
 import React from 'react';
-import config from '../../config';
 import {StaticPage, TopbarContainer} from '../../containers';
 import {
   LayoutSingleColumn,
@@ -12,12 +11,9 @@ import {
 } from '../../components';
 import css from '../AboutPage/AboutPage.module.css';
 
-import {twitterPageURL} from '../../util/urlHelpers';
+
 
 const BakeryEditorPage = () => {
-  const { siteTwitterHandle, siteFacebookPage } = config;
-  const siteTwitterPage = twitterPageURL(siteTwitterHandle);
-
 
 
   return (

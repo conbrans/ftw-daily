@@ -174,3 +174,4 @@ export { default as TopbarDesktop } from './TopbarDesktop/TopbarDesktop';
 export { default as TopbarMobileMenu } from './TopbarMobileMenu/TopbarMobileMenu';
 export { default as TransactionPanel } from './TransactionPanel/TransactionPanel';
 export { default as BakeryEditor} from './Bakeryeditor/BakeryEditor';
+export { default as Imprint} from './imprint/Imprint';

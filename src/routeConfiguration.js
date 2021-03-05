@@ -8,6 +8,7 @@ import {
   EditListingPage,
   EmailVerificationPage,
   InboxPage,
+  Imprint,
   LandingPage,
   ListingPage,
   ManageListingsPage,
@@ -335,6 +336,12 @@ const routeConfiguration = () => {
       path: '/bakeryeditor',
       name: 'BakeryEditor',
       component : props => <BakeryEditorPage {...props} />,
+    },
+
+    {
+      path: '/imprint',
+      name: 'Imprint',
+      component : props => <Imprint {...props} />,
     },
 
     // Do not change this path!
