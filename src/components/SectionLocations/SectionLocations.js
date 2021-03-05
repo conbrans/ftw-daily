@@ -59,12 +59,12 @@ const SectionLocations = props => {
         {locationLink(
           'Hamburg',
           hamburgImage,
-          's?address=Hamburg%2C%20Germany&bounds=60.53045%2C22.38197%2C60.33361%2C22.06644'
+          's?address=Hamburg%2C%20Germany&bounds=53.73189%2C10.29311%2C53.45313%2C9.70878'
         )}
         {locationLink(
           'München',
          munichImage,
-          's?address=München%2C%20Germany&bounds=61.83657%2C24.11838%2C61.42728%2C23.5422'
+          'address=München%2C%20Germany&bounds=48.24414%2C11.71469%2C48.06688%2C11.40094'
         )}
       </div>
     </div>

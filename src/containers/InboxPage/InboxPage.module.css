@@ -332,11 +332,11 @@
 
 .stateActionNeeded {
   font-weight: var(--fontWeightSemiBold);
-  color: var(--attentionColor);
+  color: black;
 }
 
 .stateNoActionNeeded {
-  color: var(--matterColorAnti);
+  color: black;
 }
 
 .stateSucces {
@@ -370,12 +370,12 @@
 }
 
 .lastTransitionedAtEmphasized {
-  color: var(--matterColor);
+  color: black;
   font-weight: var(--fontWeightMedium);
 }
 
 .lastTransitionedAtNotEmphasized {
-  color: var(--matterColorAnti);
+  color: black;
 }
 
 .bannedUserLink {
