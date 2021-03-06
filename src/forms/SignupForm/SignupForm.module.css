@@ -42,6 +42,7 @@
 
 .termsText {
   @apply --marketplaceModalHelperText;
+  color: black;
 }
 
 .termsLink {
