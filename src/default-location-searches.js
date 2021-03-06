@@ -20,14 +20,15 @@ export default [
     id: 'default-hamburg',
     predictionPlace: {
       address: 'Hamburg, Germany',
-      bounds: new LatLngBounds(new LatLng(60.53045, 22.38197), new LatLng(60.33361, 22.06644)),
+      bounds: new LatLngBounds(new LatLng(53.73189, 10.29311), new LatLng(53.45313, 9.70878)),
     },
   },
   {
+
     id: 'default-munich',
     predictionPlace: {
       address: 'München, Germany',
-      bounds: new LatLngBounds(new LatLng(61.83657, 24.11838), new LatLng(61.42728, 23.5422)),
+      bounds: new LatLngBounds(new LatLng(48.24414, 11.71469), new LatLng(48.06688, 11.40094)),
     },
   },
   {
