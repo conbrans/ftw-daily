@@ -760,7 +760,7 @@
   "SignupForm.passwordTooLong": "Das Passwort sollte höchstens {maxLength} Zeichen umfassen.",
   "SignupForm.passwordTooShort": "Das Passwort sollte mindestens {minLength} Zeichen umfassen.",
   "SignupForm.signUp": "Registrieren",
-  "SignupForm.termsAndConditionsAcceptText": "Durch Registrieren zustimmst du die {termsLink}",
+  "SignupForm.termsAndConditionsAcceptText": " Durch das Registrieren stimmst du den  {termsLink} zu ",
   "SignupForm.termsAndConditionsLinkText": "allgemeinen Geschätfsbdingungen",
   "SortBy.heading": "Sortieren nach",
   "StripeBankAccountTokenInputField.accountNumber.inline": "Kontonummer",
