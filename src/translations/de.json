@@ -365,7 +365,7 @@
   "ListingPage.viewImagesButton": "Fotos anzeigen ({count})",
   "ListingPage.yourHostHeading": "Dein(e) Bäcker(in)",
   "LocationAutocompleteInput.currentLocation": "Aktueller Standort",
-  "LocationSearchForm.placeholder": "Backwaren suchen…",
+  "LocationSearchForm.placeholder": "Backwaren suchen in…",
   "LoginForm.emailInvalid": "Eine gültige Email-Adresse wird benötigt",
   "LoginForm.emailLabel": "Email",
   "LoginForm.emailPlaceholder": "max.mustermann@beispiel.de",
